@@ -13,6 +13,11 @@ export const AddContact = () => {
 	const handleSubmit = (e) =>{
 		e.preventDefault()
 		actions.createContact(name, email, address, phone)
+		setName("")
+		setEmail("")
+		setAddress("")
+		setPhone("")
+
 	}
 
 	return (
